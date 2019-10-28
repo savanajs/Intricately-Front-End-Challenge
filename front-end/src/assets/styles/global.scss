@@ -272,6 +272,10 @@ body, input, button {
   justify-content: center;
 }
 
+.nowrap {
+  flex-wrap: nowrap !important;
+}
+
 .item-center {
   align-items: center;
   align-content: center;
@@ -409,4 +413,29 @@ header#header {
     }
   }
 
+}
+
+// Tablet
+@media (min-width: $responsive-mobile) and (max-width: $responsive-tablet) {
+  #header {
+    .row {
+      justify-content: center;
+    }
+  }
+}
+
+// Device (Mobile and tablet)
+@media screen and (max-width: $responsive-tablet) {
+    .space {
+      padding: 0px 10px;
+    }
+}
+
+// Device (Mobile)
+@media screen and (max-width: $responsive-mobile) {
+  #footer, #header {
+    .row {
+      justify-content: center;
+    }
+  }
 }

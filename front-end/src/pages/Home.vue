@@ -3,8 +3,8 @@
     <div class="shell shell--primary">
       <section class="content">
         <div class="row">
-          <div class="col col--12-lg">
-            <ul class="list-inline list-terniary breadcrumb">
+          <div class="col col--12-lg col--12-md col--12-sm">
+            <ul class="list-inline list-terniary breadcrumb space">
               <li class="list__item">
                 <a href="/" class="item__link">Home</a>
               </li>
@@ -19,7 +19,7 @@
       <section class="content">
         <div class="row">
           <div class="col col--3-lg col--12-md col--12-sm">
-            <aside>
+            <aside class="space">
               <nav>
                 <ul class="list-block list-block--primary">
                   <li class="list__item">
@@ -75,8 +75,22 @@
                     </div>
                     <div class="card__content">
                       <ul class="list-block-secondary">
-                        <li class="list__item ">
-                          <div class="row">
+                        <li class="list__item">
+                          <div class="row nowrap">
+                            <div class="col">
+                              <span>8 days ago</span>
+                            </div>
+                            <div class="col wrap-icon">
+                              <i class="icon icon-play"></i>
+                            </div>
+                            <div class="col">
+                              <p><a href="#">Cloud Ochestration</a> replaced</p>
+                              <p><span class="line-through">Microsoft</span> on <a href="#">1 property</a></p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="row nowrap">
                             <div class="col">
                               <span>8 days ago</span>
                             </div>
@@ -90,21 +104,7 @@
                           </div>
                         </li>
                         <li class="list__item ">
-                          <div class="row">
-                            <div class="col">
-                              <span>8 days ago</span>
-                            </div>
-                            <div class="col wrap-icon">
-                              <i class="icon icon-play"></i>
-                            </div>
-                            <div class="col">
-                              <p><a href="#">Cloud Ochestration</a> replaced</p>
-                              <p><span class="line-through">Microsoft</span> on <a href="#">1 property</a></p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="list__item ">
-                          <div class="row">
+                          <div class="row nowrap">
                             <div class="col">
                               <span>8 days ago</span>
                             </div>
@@ -129,7 +129,7 @@
                     <div class="card__content">
                       <ul class="list-block-secondary">
                           <li class="list__item ">
-                            <div class="row item-center">
+                            <div class="row item-center nowrap">
                               <div class="col wrap-icon">
                                 <img src="../assets/imgs/logo.png" alt="Amazon" id="logo-company" />
                               </div>
@@ -158,7 +158,7 @@
                     <div class="card__content">
                       <ul class="list-block-secondary">
                           <li class="list__item ">
-                            <div class="row">
+                            <div class="row nowrap">
                               <div class="col wrap-icon">
                                 <img src="../assets/imgs/logo-copy-3.png" alt="Amazon" id="logo-company" />
                               </div>
