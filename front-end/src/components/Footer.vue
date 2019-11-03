@@ -86,7 +86,7 @@
 <script>
 
 export default {
-  name: 'footer',
+  name: 'footerComponent',
 }
 </script>
 

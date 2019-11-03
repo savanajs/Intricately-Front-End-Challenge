@@ -1,24 +1,23 @@
 <template>
   <div id="wrapper">
-    <Header />
-    <Home />
-    <Footer />
+    <HeaderComponent />
+        <router-view></router-view>
+    <FooterComponent />
   </div>
+  
 </template>
 
 <script>
 
 import './assets/styles/global.scss';
-import Header from './includes/Header.vue';
-import Footer from './includes/Footer.vue';
-import Home from './pages/Home.vue';
+import HeaderComponent from './components/Header.vue';
+import FooterComponent from './components/Footer.vue';
 
 export default {
-  name: 'app',
+  name: 'appComponent',
   components: {
-    Header,
-    Home,
-    Footer,
+    HeaderComponent,
+    FooterComponent,
   }
 }
 </script>

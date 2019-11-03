@@ -59,7 +59,7 @@
 <script>
 
 export default {
-  name: 'header',
+  name: 'headerComponent',
 }
 </script>
 
