@@ -62,7 +62,3 @@ export default {
   name: 'headerComponent',
 }
 </script>
-
-<style>
-
-</style>
