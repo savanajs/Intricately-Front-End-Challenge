@@ -7,7 +7,7 @@
                 </router-link>
             </li>
             <li class="list__item">
-                <router-link to="/" class="item__link" :class="{active: activePage == 2}">
+                <router-link to="/table" class="item__link" :class="{active: activePage == 2}">
                     Company Table
                 </router-link>
             </li>
