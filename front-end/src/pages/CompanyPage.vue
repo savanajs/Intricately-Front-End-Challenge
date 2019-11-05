@@ -110,13 +110,13 @@
                         </div>
                         <div class="card__content">
                         <ul class="list-block-secondary">
-                            <li class="list__item ">
+                            <li :key="index" v-for="(item, index) in companies" class="list__item">
                                 <div class="row item-center nowrap">
                                 <div class="col wrap-icon">
-                                    <img src="../assets/imgs/logo.png" alt="Amazon" id="logo-company" />
+                                    <img :src="item.image" :alt="item.name" id="logo-company" />
                                 </div>
                                 <div class="col">
-                                    <a href="#">Company name</a>
+                                    <a href="#">{{item.name}}</a>
                                 </div>
                                 </div>
                             </li>
@@ -142,7 +142,7 @@
                             <li class="list__item ">
                                 <div class="row nowrap">
                                 <div class="col wrap-icon">
-                                    <img src="../assets/imgs/logo-copy-3.png" alt="Amazon" id="logo-company" />
+                                    <img src="../assets/imgs/amazon.png" alt="Amazon" id="logo-company" />
                                 </div>
                                 <div class="col">
                                     <a href="#">Company name</a>
@@ -165,11 +165,22 @@
 <script>
 
 import NavComponent from '../components/Nav.vue';
+import { mapState } from 'vuex';
 
 export default {
   name: 'CompanyPage',
   components: {
     NavComponent
+  },
+  mounted() {
+
+  },
+  computed: {
+    ...mapState({
+        companies: state => {
+            return state.companies;
+        }
+    })
   }
 }
 </script>
