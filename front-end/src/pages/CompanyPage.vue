@@ -104,25 +104,7 @@
                     </div>
                     </div>
                     <div class="col col--6-lg col--6-md col--12-sm">
-                    <div class="card">
-                        <div class="card__top">
-                        Activies
-                        </div>
-                        <div class="card__content">
-                        <ul class="list-block-secondary">
-                            <li :key="index" v-for="(item, index) in companies" class="list__item">
-                                <div class="row item-center nowrap">
-                                <div class="col wrap-icon">
-                                    <img :src="item.image" :alt="item.name" id="logo-company" />
-                                </div>
-                                <div class="col">
-                                    <a href="#">{{item.name}}</a>
-                                </div>
-                                </div>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
+                        <CompaniesComponent title="Activies" />
                     <div class="card">
                         <div class="card__top">
                         Company spend history
@@ -165,23 +147,14 @@
 <script>
 
 import NavComponent from '../components/Nav.vue';
-import { mapState } from 'vuex';
+import CompaniesComponent from '../components/Companies';
 
 export default {
   name: 'CompanyPage',
   components: {
-    NavComponent
+    NavComponent,
+    CompaniesComponent
   },
-  mounted() {
-
-  },
-  computed: {
-    ...mapState({
-        companies: state => {
-            return state.companies;
-        }
-    })
-  }
 }
 </script>
 

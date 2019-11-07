@@ -1,6 +1,5 @@
 <template>
     <div class="overlay">
-
       <div class="modal">
         <div class="modal__header">
           <a class="modal-close" href="" @click.stop.prevent="closeModal">x</a>
