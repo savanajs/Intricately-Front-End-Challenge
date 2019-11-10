@@ -4,15 +4,7 @@
             <section class="content">
                 <div class="row">
                 <div class="col col--12-lg col--12-md col--12-sm">
-                    <ul class="list-inline list-terniary breadcrumb space">
-                        <li class="list__item">
-                            <a href="/" class="item__link">Home</a>
-                        </li>
-                        <li>/</li>
-                        <li class="list__item">
-                            <a href="#" class="item__link">Company Table</a>
-                        </li>
-                    </ul>
+                    <BreadCrumb currentPage="Company Table"></BreadCrumb>
                 </div>
                 </div>
             </section>
@@ -34,11 +26,13 @@
 <script>
 
 import NavComponent from '../components/Nav.vue';
+import BreadCrumb from '../components/BreadCrumb';
 
 export default {
   name: 'CompanyTable',
   components: {
-      NavComponent
+      NavComponent,
+      BreadCrumb,
   }
 }
 </script>
